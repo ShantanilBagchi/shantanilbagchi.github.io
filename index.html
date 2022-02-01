@@ -308,7 +308,239 @@
       </div> <!-- End skills -->
 
    </section> <!-- Resume Section End-->
-									     
+
+										       
+										       
+<!-- Portfolio Section
+   ================================================== -->
+<!-- <section id="portfolio"> 
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1 style="color:Black;font-size:34px;"><center>Overview of my Data Science Projects.</center></h1>
+
+            <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/Kickstarter-Logo.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Kick Starter</h5>
+                              <p>Classifcation Project & Clustering</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/nutrition-therapy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Nutitrion and Covid 19 Recovery</h5>
+                              <p>Regressions & PCA</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/HealthCareFraud.jpeg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Healthcare Fraud Detection</h5>
+                              <p>Anomaly Detection</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/CarsGasConsum.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Gas Consumption</h5>
+                              <p>Multiple Linear Regressions</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/Kickstarter-Logo.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h1><center>Kick Starter Project</center></h1>
+				  
+				  <h3><center>Objective</center></h3>
+				  <p style="color:Black;" >The goal is to determine if a project will be successful or not on kickstarter.</p>
+				  
+				  <h3><center>
+				  Methodology
+				  </center></h3>
+			      <p style="color:Black;">I started the project my cleaning the data and imputing the missing data. From their I performed feature engineering to dummify my variables and adjust them. I then used anomaly detection models percisely isoaltion forest to detect outliers and remove them. From there I did feature selection and tested my models performance. After selecting the top 2 champion models I performed an parameter tuning to best optimize the model.  </p>
+				  
+				  <h3><center>Recomendation</center></h3>
+			      <p style="color:Black;" >
+				  This appraoch is fairy accurate approach that fits the criteria, 
+				  the model can perform better if more data specifically indsutry studies would help augment the model to perform better. 
+				  for more details please see github project report.
+				  </p>
+				  				  
+				  
+               <span class="categories"><i class="fa fa-tag"></i>Data Mining, Feature Engineering, Data Cleaning,Model Tuning, Visualization,Python</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://github.com/HishamSalem/Kick-Starter" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/nutrition-therapy.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h1><center>Covid 19 and Recovery</center></h1>
+				  
+				  <h3><center>Objective</center></h3>
+				  <p style="color:Black;" >See which nutritional intake affects recovery.</p>
+				  
+				  <h3><center>
+				  Methodology
+				  </center></h3>
+			      <p style="color:Black;">
+				  The methodology appraoch of this project focuses on cleaning, then imputating the data. From there feature selection was conducted and then skewness and outlier tests were conducted. From there models were developed and the two champion models were tree based regression models. We then tuned the parameters to get the most optimal results. 
+				  </p>
+				  <h3><center>Recomendation</center></h3>
+			      <p style="color:Black;" >
+				  Based on this approach we believe that protein is one of the strong predictors in predicting Covid19 recovery. Do note that there are other factors that can impact the data since medical care or multiple external factors can affect recovery. 
+				  </p>
+				  
+				  <h3><center>Extention</center></h3>
+			      <p style="color:Black;" >
+				  The data as is does not allow us to impose a hirercal format, however through some creativity and R packages we can create data on countries by using the package countrycode in R. This package allows us to take a more holistical look on the data. 
+				  </p>
+              <span class="categories"><i class="fa fa-tag"></i>Statistics, Feature Engineering, Data Cleaning,Model Tuning, Visualization,R</span>				  
+			  
+			  </div>
+
+            <div class="link-box">
+               <a href="https://github.com/HishamSalem/Covid19-and-Protein-diets" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/HealthCareFraud.jpeg" alt="" />
+
+		      <div class="description-box">
+			      <h1><center>Healthcare Fraud Detection</center></h1>
+				  
+				  <h3><center>Objective</center></h3>
+				  <p style="color:Black;" >Find the features associated with fraudlent providers.</p>
+				  
+				  <h3><center>
+				  Methodology
+				  </center></h3>
+			      <p style="color:Black;">We start by cleaning and then aggregating the data. From there an exploratory analysis is performed to find the features selected then models are selected from the candiate models.  
+				  </p>
+				  <h3><center>Recomendation</center></h3>
+			      <p style="color:Black;" >
+				  Based on the exploratory analysis and the model we believe that a cost based approach is the appraoch that makes sense as it priortizes selecting fraudlent that are worth the time. The model can detect 7/10 fraudlent providers effectively. 
+				  </p>
+				  
+              <span class="categories"><i class="fa fa-tag"></i> Data Cleaning,Model Tuning, Visualization,Python</span>				  
+			  
+			  </div>
+
+            <div class="link-box">
+               <a href="https://github.com/HishamSalem/Fraud-Detection-Python" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+		  
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/CarsGasConsum.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h1><center>Cars and Gas Consumption</center></h1>
+				  
+				  <h3><center>Objective</center></h3>
+				  <p style="color:Black;" >Develop a multiple linear regression model that predicts miles per gallon consumption.</p>
+				  
+				  <h3><center>
+				  Methodology
+				  </center></h3>
+			      <p style="color:Black;">  
+				  I did some exploratory analysis then performed a hypothesis test with a multiple linear regression. I then used QQ plot to see if my regression is appropriate.For details please refer to github project.
+				  </p>
+				  <h3><center>Conclusion</center></h3>
+			      <p style="color:Black;" >
+				   The variables horsepower, Top Speed, and Weight are relevant in predicting Miles Per Gallon. For Details please refer to report. 
+				  </p>
+				  
+              <span class="categories"><i class="fa fa-tag"></i> R, Statistics</span>				  
+			  
+			  </div>
+
+            <div class="link-box">
+               <a href="https://github.com/HishamSalem/Multiple-Linear-Regression-R" target="_blank">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+		  
+</section> <!-- Portfolio Section End--> -->
+										       
+										       
+										       
+										       
+										       
+										       
+										       
+										       
+										       
+										       
+										       
+										       
 <!-- Contact Section
    ================================================== -->
    <section id="contact">
