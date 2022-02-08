@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #F06000; }
-header .social li a:hover { color: #fff; }
+header .social li a:hover { color: #FFFFFF; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -116,7 +116,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #fff; }
+header .scrolldown a:hover { color: #FFFFFF; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
