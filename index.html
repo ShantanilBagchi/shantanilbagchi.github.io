@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Shantanil Bagchi's Portfolio</title>
+	<title>Home</title>
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="NeilBagchi" content="">
 
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <!-- CSS
-   ================================================== -->
-   	<link rel="stylesheet" href="css/default.css">
-   	<link rel="stylesheet" href="css/layout.css">
-   	<link rel="stylesheet" href="css/media-queries.css">
-   	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <!--<link rel="stylesheet" href="css/style.css">-->
 
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" > 
 
 </head>
 
@@ -31,603 +36,408 @@
 
    <!-- Header
    ================================================== -->
-   <header id="home">
+   <header>
 
-      <nav id="nav-wrap">
+      <div class="row">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <div class="twelve columns">
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	    <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
+            <div class="logo">
+               <a href="index.html"><img alt="" src="images/logo.png"></a>
+            </div>
 
-      </nav> <!-- end #nav-wrap -->
+            <nav id="nav-wrap">
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h2 class="responsive-headline" style="color:#F06000;">Hey! I'm Shantanil or as friends call me Neil. Welcome here.</h2>
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.linkedin.com/in/shantanil/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/ShantanilBagchi"><i class="fa fa-github"></i></a></li>
-            </ul>
+               <ul id="nav" class="nav">
+
+	               <li class="current"><a href="index.htm">Home</a></li>
+	               <!--<li><span><a href="blog.html">Blog</a></span>
+                     <ul>
+                        <li><a href="blog.html">Blog Index</a></li>
+                        <li><a href="single.html">Post</a></li>
+                     </ul>
+                  </li>-->
+                  <li><span><a href="portfolio-index.html">Portfolio</a></span>
+                     <ul>
+                        <li><a href="portfolio-index.html">Portfolio Index</a></li>
+                        <li><a href="portfolio.html">Portfolio Entry</a></li>
+                     </ul>
+                  </li>
+	               <li><a href="about.html">About</a></li>
+                  <!--<li><a href="contact.html">Contact</a></li>-->
+                  
+                  <!-- <li><a href="styles.html">Features</a></li> -->
+
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
          </div>
-      </div>	
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>	
-	
-	
+      </div>
+
    </header> <!-- Header End -->
 
 
-   <!-- About Section 
+
+   <!-- Intro Section
    ================================================== -->
-   <section id="about">
+   <section id="intro">
+
+      <!--<div class="wrapper"> 
+         <div class="static-txt">I'm a</div><br>
+         <ul class="dynamic-txts">
+           <li><span>YouTuber</span></li>
+           <li><span>Designer</span></li>
+           <li><span>Developer</span></li>
+           <li><span>Freelancer</span></li>
+         </ul>
+       </div>--> <!-- USe style.css-->
+
+
+      <!-- Flexslider Start-->
+	   <!--<div id="intro-slider" class="flexslider">
+
+		   <ul class="slides">
+
+			   
+			   <li>
+				   <div class="row">
+					   <div class="twelve columns">
+						   <div class="slider-text">
+							   <h1>Free amazing site template<span>.</span></h1>
+							   <p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
+                        enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. lacus sit amet luctus lobortis, dolores et quas molestias excepturi
+                        enim tellus ultrices elit.</p>
+						   </div>
+                     <div class="slider-image">
+                        <img src="images/sliders/home-slider-image-01.png" alt="" />
+                     </div>
+					   </div>
+				   </div>
+			   </li>
+
+            
+			   <li>
+				   <div class="row">
+					   <div class="twelve columns">
+						   <div class="slider-text">
+							   <h1>Responsive + HTML5 + CSS3<span>.</span></h1>
+							   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti eos et accusamus. amet consequat enim elit noneas sit amet luctu. lacus sit amet luctus lobortis.
+                        Aenean condimentum, lacus sit amet luctus.</p>
+						   </div>
+                     <div class="slider-image">
+                        <img src="images/sliders/home-slider-image-02.png" alt="" />
+                     </div>
+					   </div>
+				   </div>
+			   </li>
+
+		   </ul>
+
+	   </div>--> <!-- Flexslider End-->
+
+   </section> <!-- Intro Section End-->
+
+   <!-- Info Section
+   ================================================== -->
+   <!--<section id="info">
 
       <div class="row">
 
-         <div class="three columns">
+         <div class="bgrid-quarters s-bgrid-halves">
 
-            <img class="profile-pic"  src="images/profilepic.png" alt="" />
+           <div class="columns">
+              <h2>Clean & Modern.</h2>
 
-         </div>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+           </div>
 
-         <div class="nine columns main-col">
+           <div class="columns">
+              <h2>Responsive.</h2>
 
-            <h2>About Me</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+           </div>
 
-            <p style="color:White;">		    
-		<p style="color:White;">    
-		    I'm a storyteller at heart and seasoned research & analytics professional who loves solving problems and telling stories with data. 
-		    I have aided organizations adopt data-driven decision-making solutions to improve businesses. 
-		    One of my major quests has been to leverage data to find actionable insights and thus connect dollars to the business outcomes.
-		    I believe with my unique business and technical background I can bridge the gap between tech and business.
-		    I call myself a <b>Data Evangelist</b> as I believe in empowering every individual with Data-Literacy, thus I have played the role of a mentor as well.
-		 </p>
-		 <p style="color:White;">
-		    A little about my personality: I am the type of person who will ask <b>“What can I do to help and improve?”</b> when presented with a problem and will pitch 
-		    in whenever needed to find out-of-the-box solutions to existing processes. I am energized by collaborating with other people to find solutions and 
-		    implementing them to see improvement. I strongly believe in giving back to society and uplift everyone around me.
-		 </p>
-		 <p style="color:White;">
-		    Keeping data science aside, I love to sketch in my free time.
-		 </p>
-            <div class="row">
+           <div class="columns s-first">
+              <h2>HTML5 + CSS3.</h2>
 
-               <div class="columns contact-details">
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+           </div>
 
-                  <h2>Contact Details</h2>
-                  <p style="color:White; class="address" >
-						   <span>Shantanil Bagchi</span><br>
-						   <!--<span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br> -->
-						   <span>(438) 725-3107</span><br>
-                     <span>shantanil.bagchi@mail.mcgill.ca</span>
-					   </p>
+           <div class="columns">
+              <h2>Free of Charge.</h2>
 
-               </div>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+           </div>
 
-               <div class="columns download">
-                  <p>
-                     <a href="Shantanil_Resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
+           </div>
 
       </div>
 
-   </section> <!-- About Section End-->
+   </section>--> <!-- Info Section End-->
 
-											    
-											     <!-- Resume Section
+   <!-- Works Section
    ================================================== -->
-   <section id="resume">
+   <section id="works">
 
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
+      <div class="row">
 
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+         <div class="twelve columns align-center">
+            <h1>Some of my recent works.</h1>
          </div>
 
-         <div class="nine columns main-col">
+         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
 
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>McGill University, Electrical and Computer Engineering </h3>
-                  <p class="info">Master of Science <span>&bull;</span> <em class="date">September 2018 - August 2021</em></p>
-
+    		   <div class="columns portfolio-item">
+               <div class="item-wrap">
+    				   <a href="portfolio.html"> <!-- Have to change later-->
+                     <img alt="" src="images/portfolio/makeover.png">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                  </a>
+    					<div class="portfolio-item-meta">
+    					   <h5><a href="portfolio.html">MakeoverMonday</a></h5>
+                     <p>Dashboard, Anaytics</p>
+    					</div>
                </div>
+    			</div>
 
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>YMCA University of Science and Technology</h3>
-                  <p class="info">Bachelor of Technology <span>&bull;</span> <em class="date">August 2010 – May 2014</em></p>
-
+            <!--<div class="columns portfolio-item">
+               <div class="item-wrap">
+    				   <a href="portfolio.html">
+                     <img alt="" src="images/portfolio/gan.png">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                  </a>
+    					<div class="portfolio-item-meta">
+    					   <h5><a href="portfolio.html">GANs</a></h5>
+                     <p>Machine Learning, Deep Learning</p>
+    					</div>
                </div>
+    			</div>-->
 
-            </div> <!-- item end -->
+            <div class="columns portfolio-item s-first">
+               <div class="item-wrap">
+    				   <a href="portfolio.html">
+                     <img alt="" src="images/portfolio/mnist.png">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                  </a>
+    					<div class="portfolio-item-meta">
+    					   <h5><a href="portfolio.html">Modified MNIST Classifier</a></h5>
+                     <p>Machine Learning, Deep Learning</p>
+    					</div>
+               </div>
+    			</div>
 
-         </div> <!-- main-col end -->
+            <div class="columns portfolio-item">
+               <div class="item-wrap">
+    				   <a href="portfolio.html">
+                     <img alt="" src="images/portfolio/face_mask.png">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                  </a>
+    					<div class="portfolio-item-meta">
+    					   <h5><a href="portfolio.html">Face Mask Detection</a></h5>
+                     <p>Machine Learning, Deep Leaning, Transfer Learning</p>
+    					</div>
+               </div>
+    			</div>
 
-      </div> <!-- End Education -->
+             <div class="columns portfolio-item">
+               <div class="item-wrap">
+    				   <a href="portfolio.html">
+                     <img alt="" src="images/portfolio/subreddit.png">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                  </a>
+    					<div class="portfolio-item-meta">
+    					   <h5><a href="portfolio.html">SubReddit Classifier</a></h5>
+                     <p>Machine Learning, NLP</p>
+    					</div>
+               </div>
+    			</div>
 
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Experience</span></h1>
          </div>
 
-         <div class="nine columns main-col">
+      </div>
 
-            <div class="row item">
+   </section> <!-- Works Section End-->
 
-               <div class="twelve columns">
+   <!-- Journal Section
+   ================================================== -->
+   <!-- <section id="journal">
 
-                  <h3>BrainBox AI</h3>
-                  <p class="info">Data Analyst <span>&bull;</span> <em class="date">September 2021 - Present</em></p>
-
-                  <p style="color:Black;">
-                   <li> Automated preprocessing pipeline for mapping team using Python to reduce workhour wastage by 5%. </li>
-		   <li> Identifying useful data points from various building automation system (BAS) datasets. Using REGEX, Excel 
-			lookups, formulas to find data outliers, exceptions and relabel points to match Brainbox standards. </li>
-		   <li> Analyzed existing project timeline data to identify bottlenecks in the current process. Modified existing
-			estimation procedure to provide better time estimate for onboarding a site. </li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-					 
-		            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Alphaa.AI</h3>
-                  <p class="info">Consultant (Volunteer) <span>&bull;</span> <em class="date">July 2020 - March 2021</em></p>
-
-                  <p style="color:Black;">
-                   <li>  Implemented augmented analytics solution using NLP based Alphaa.AI software for three Fortune 500 
-				companies to aid the client’s digital transformation process. </li>
-		   <li>  Mentored 50+ professionals (Alphaa.AI fellowship program) in the skill of data-driven decision-making and 
-				data storytelling using effective visualization strategies using Excel </li>
-		   <li>  Utilized SQL, Power BI and other dashboard/ visualization tools to build out proof of concept Human 
-				Resource (HR) / people analytics and spend analytics package from the ground up for Alphaa.AI software.</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-					 
-		            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Data for Good (NGO)</h3>
-                  <p class="info">Data Analyst (Volunteer)<span>&bull;</span> <em class="date">July 2020 - March 2021</em></p>
-
-                  <p style="color:Black;">
-                   <li> Acquired and analyzed Maison des femmes de Quebec’s shelter data using Python and Excel to prepare 
-			reports that interpret shelter-seeker behavior, stay duration and various other indicators. </li>
-		   <li> Developed dynamic management dashboard in Excel for the leadership team of Maison des femmes de 
-			Quebec. Communicated with key stakeholders to share actionable insights to support their future goals. </li>
-		   <li> Conducted a thorough analysis of 200k+ NCC (National Conservatory of Canada) donor data to identify loyal 
-			donors and recommended strategies to NCC to maintain and expand their donor base using Excel. </li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->			
-					 
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>GAIL India LTD</h3>
-                  <p class="info">Senior Engineer <span>&bull;</span> <em class="date">September 2014 - August 2018</em></p>
-
-                  <p style="color:Black;">
-                  
-		<li> Led a team of 10+ engineers on a $40M project to revamp an existing process plant unit improving plant 
-			performance by 8% and reducing downtime.</li>
-		<li> Automated departmental purchase order pipeline, as well as developed a spend and procurement 
-			management dashboard in Excel using VBA automation. Achieved 5% reduction in workhour wastage by 
-			implementing automated contract renewal reminders.</li>
-		<li> Prepared reports after identifying and analyzing procurement data from MS Access to identify prospective 
-			avenues of expenditure reduction, new competitors etc.</li>
-		<li> Successfully conducted cybersecurity threat research on plant control systems. Directed the creation of a 
-			policy development plan for subsequent implementation aiding the digital transformation goal.</li>
-		<li> Other responsibilities included material management, vendor communication, contract negotiation, raising 
-			purchase requisitions, modification project planning and execution, Site Acceptance Test (SAT) etc.</li>
-		</p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills and Tools</span></h1>
+      <div class="row">
+         <div class="twelve columns align-center">
+            <h1>Our latest posts and rants.</h1>
          </div>
+      </div>
 
-         <div class="nine columns main-col">
+      <div class="blog-entries">-->
 
-            <p>
+         <!-- Entry -->
+         <!--<article class="row entry">
+
+            <div class="entry-header">
+
+               <div class="permalink">
+                  <a href="single.html"><i class="fa fa-link"></i></a>
+               </div>
+
+               <div class="ten columns entry-title pull-right">
+                  <h3><a href="single.html">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h3>
+               </div>
+
+               <div class="two columns post-meta end">
+                  <p>
+                  <time datetime="2014-01-31" class="post-date" pubdate="">Jan 31, 2014</time>
+                  <span class="dauthor">By Sakura Haruno</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="ten columns offset-2 post-content">
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+               deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+               <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
+            </div>
+
+         </article>--> <!-- Entry End -->
+
+         <!-- Entry -->
+         <!--<article class="row entry">
+
+            <div class="entry-header">
+
+               <div class="permalink">
+                  <a href="single.html"><i class="fa fa-link"></i></a>
+               </div>
+
+               <div class="ten columns entry-title pull-right">
+                  <h3><a href="single.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed.</a></h3>
+               </div>
+
+               <div class="two columns post-meta end">
+                  <p>
+                  <time datetime="2014-01-29" class="post-date" pubdate="">Jan 30, 2014</time>
+                  <span class="dauthor">By John Doe</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="ten columns offset-2 post-content">
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+               deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+               <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
+            </div>
+
+         </article>--> <!-- Entry End -->
+
+         <!-- Entry -->
+         <!--<article class="row entry">
+
+            <div class="entry-header">
+
+               <div class="permalink">
+                  <a href="single.html"><i class="fa fa-link"></i></a>
+               </div>
+
+               <div class="ten columns entry-title pull-right">
+                  <h3><a href="blog-single.html">Quis autem vel esse eum iure reprehenderit qui in ea voluptate velit esse.</a></h3>
+               </div>
+
+               <div class="two columns post-meta end">
+                  <p>
+                  <time datetime="2014-01-28" class="post-date" pubdate="">Jan 28, 2014</time>
+                  <span class="dauthor">By Naruto Uzumaki</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="ten columns offset-2 post-content">
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+               deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+               <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
+            </div>
+
+         </article>--> <!-- Entry End -->
+
+      <!--</div>--> <!-- Entries End -->
+
+   <!--</section>--> <!-- Journal Section End-->
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="eight columns offset-1">
+
+            <h1><a href="https://www.linkedin.com/in/shantanil/">Follow me for more interesting posts</a></h1>
+            <p>I post about my journey in the field of data science and analytics
             </p>
 
-				<div class="bars">
+         </div>
 
-				   <ul class="skills">
-					   <li><span class="bar-expand python"></span><em>Python</em></li>
-					   <li><span class="bar-expand sql"></span><em>SQL</em></li>
-					   <li><span class="bar-expand machinelearning"></span><em>Machine Learning And Deep Learning</em></li>
+         <div class="three columns action">
 
-					
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-										       
-										       
-<!-- Portfolio Section
-   ================================================== -->
- <section id="portfolio"> 
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1 style="color:Black;font-size:34px;"><center>Overview of my Data Science Projects.</center></h1>
-
-            <!-- portfolio-wrapper -->
-         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/Kickstarter-Logo.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Kick Starter</h5>
-                              <p>Classifcation Project & Clustering</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/nutrition-therapy.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Nutitrion and Covid 19 Recovery</h5>
-                              <p>Regressions & PCA</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/HealthCareFraud.jpeg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Healthcare Fraud Detection</h5>
-                              <p>Anomaly Detection</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-				
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/CarsGasConsum.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Gas Consumption</h5>
-                              <p>Multiple Linear Regressions</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/Kickstarter-Logo.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h1><center>Kick Starter Project</center></h1>
-				  
-				  <h3><center>Objective</center></h3>
-				  <p style="color:Black;" >The goal is to determine if a project will be successful or not on kickstarter.</p>
-				  
-				  <h3><center>
-				  Methodology
-				  </center></h3>
-			      <p style="color:Black;">I started the project my cleaning the data and imputing the missing data. From their I performed feature engineering to dummify my variables and adjust them. I then used anomaly detection models percisely isoaltion forest to detect outliers and remove them. From there I did feature selection and tested my models performance. After selecting the top 2 champion models I performed an parameter tuning to best optimize the model.  </p>
-				  
-				  <h3><center>Recomendation</center></h3>
-			      <p style="color:Black;" >
-				  This appraoch is fairy accurate approach that fits the criteria, 
-				  the model can perform better if more data specifically indsutry studies would help augment the model to perform better. 
-				  for more details please see github project report.
-				  </p>
-				  				  
-				  
-               <span class="categories"><i class="fa fa-tag"></i>Data Mining, Feature Engineering, Data Cleaning,Model Tuning, Visualization,Python</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://github.com/HishamSalem/Kick-Starter" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/nutrition-therapy.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h1><center>Covid 19 and Recovery</center></h1>
-				  
-				  <h3><center>Objective</center></h3>
-				  <p style="color:Black;" >See which nutritional intake affects recovery.</p>
-				  
-				  <h3><center>
-				  Methodology
-				  </center></h3>
-			      <p style="color:Black;">
-				  The methodology appraoch of this project focuses on cleaning, then imputating the data. From there feature selection was conducted and then skewness and outlier tests were conducted. From there models were developed and the two champion models were tree based regression models. We then tuned the parameters to get the most optimal results. 
-				  </p>
-				  <h3><center>Recomendation</center></h3>
-			      <p style="color:Black;" >
-				  Based on this approach we believe that protein is one of the strong predictors in predicting Covid19 recovery. Do note that there are other factors that can impact the data since medical care or multiple external factors can affect recovery. 
-				  </p>
-				  
-				  <h3><center>Extention</center></h3>
-			      <p style="color:Black;" >
-				  The data as is does not allow us to impose a hirercal format, however through some creativity and R packages we can create data on countries by using the package countrycode in R. This package allows us to take a more holistical look on the data. 
-				  </p>
-              <span class="categories"><i class="fa fa-tag"></i>Statistics, Feature Engineering, Data Cleaning,Model Tuning, Visualization,R</span>				  
-			  
-			  </div>
-
-            <div class="link-box">
-               <a href="https://github.com/HishamSalem/Covid19-and-Protein-diets" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/HealthCareFraud.jpeg" alt="" />
-
-		      <div class="description-box">
-			      <h1><center>Healthcare Fraud Detection</center></h1>
-				  
-				  <h3><center>Objective</center></h3>
-				  <p style="color:Black;" >Find the features associated with fraudlent providers.</p>
-				  
-				  <h3><center>
-				  Methodology
-				  </center></h3>
-			      <p style="color:Black;">We start by cleaning and then aggregating the data. From there an exploratory analysis is performed to find the features selected then models are selected from the candiate models.  
-				  </p>
-				  <h3><center>Recomendation</center></h3>
-			      <p style="color:Black;" >
-				  Based on the exploratory analysis and the model we believe that a cost based approach is the appraoch that makes sense as it priortizes selecting fraudlent that are worth the time. The model can detect 7/10 fraudlent providers effectively. 
-				  </p>
-				  
-              <span class="categories"><i class="fa fa-tag"></i> Data Cleaning,Model Tuning, Visualization,Python</span>				  
-			  
-			  </div>
-
-            <div class="link-box">
-               <a href="https://github.com/HishamSalem/Fraud-Detection-Python" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 End -->
-		  
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/CarsGasConsum.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h1><center>Cars and Gas Consumption</center></h1>
-				  
-				  <h3><center>Objective</center></h3>
-				  <p style="color:Black;" >Develop a multiple linear regression model that predicts miles per gallon consumption.</p>
-				  
-				  <h3><center>
-				  Methodology
-				  </center></h3>
-			      <p style="color:Black;">  
-				  I did some exploratory analysis then performed a hypothesis test with a multiple linear regression. I then used QQ plot to see if my regression is appropriate.For details please refer to github project.
-				  </p>
-				  <h3><center>Conclusion</center></h3>
-			      <p style="color:Black;" >
-				   The variables horsepower, Top Speed, and Weight are relevant in predicting Miles Per Gallon. For Details please refer to report. 
-				  </p>
-				  
-              <span class="categories"><i class="fa fa-tag"></i> R, Statistics</span>				  
-			  
-			  </div>
-
-            <div class="link-box">
-               <a href="https://github.com/HishamSalem/Multiple-Linear-Regression-R" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-		  
-</section> <!-- Portfolio Section End-->
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-										       
-<!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead" style="color:White;font-size:25px;">
-				  If you have any queries please reach out to me through the form, linkedIn, or my email.
-                  </p>
-
-            </div>
+            <a href="https://www.linkedin.com/in/shantanil/" class="button">Click Here</a>
 
          </div>
 
-         <div class="row">
+      </div>
 
-            <div class="eight columns">
+   </section> <!-- Call-To-Action Section End-->
 
-               <!-- form -->
-               <form action="mailto:shantanil.bagchi@mail.mcgill.ca" method="post" id="contactForm" name="contactForm">
-					<fieldset>
+   <!-- Tweets Section
+   ================================================== -->
+   <!--<section id="tweets">
 
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
+      <div class="row">
 
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
+         <div class="tweeter-icon align-center">
+            <i class="fa fa-twitter"></i>
+         </div>
 
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
+         <ul id="twitter" class="align-center">
+            <li>
+               <span>
+               This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+               Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+               <a href="#">http://t.co/CGIrdxIlI3</a>
+               </span>
+               <b><a href="#">2 Days Ago</a></b>
+            </li>
+           
+         </ul>
 
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Contact Information</h4>
-                  <p style="color:White;font-size:18px; class="address" >
-						   <span>Shantanil Bagchi</span><br>
-						   <!--<span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br> -->
-						   <span>(438) 725-3107</span><br>
-                     <span>shantanil.bagchi@mail.mcgill.ca</span>
-					   </p>
-
-				   </div>
-
-
-            </aside>
+         <p class="align-center"><a href="#" class="button">Follow us</a></p>
 
       </div>
 
-   </section> <!-- Contact Section End-->
+   </section>--> <!-- Tweet Section End-->
+
 
 
    <!-- footer
@@ -638,18 +448,36 @@
 
          <div class="twelve columns">
 
-            <ul class="social-links">
+            <ul class="footer-nav">
+					<li><a href="#">Home.</a></li>
+              	<!--<li><a href="#">Blog.</a></li>-->
+              	<li><a href="#">Portfolio.</a></li>
+              	<li><a href="#">About.</a></li>
+              	<!--<li><a href="#">Contact.</a></li>-->
+               <!--<li><a href="#">Features.</a></li>-->
+			   </ul>
+
+            <ul class="footer-social">
+               <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+               <li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+
                <li><a href="https://www.linkedin.com/in/shantanil/"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://github.com/ShantanilBagchi"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.youtube.com/channel/UCJZqN4asywQpMUl4hGE5H7w"><i class="fa fa-youtube"></i></a></li>
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2022 Shantanil's Portfolio</li>
-            </ul>
+               <li>Copyright &copy; 2022 neilbagchi</li>
+               <li>Inspiration from <a href="http://www.styleshout.com/">Styleshout</a></li>        
+            </ul>s
 
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
 
       </div>
 
@@ -662,11 +490,9 @@
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
    <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
    <script src="js/init.js"></script>
 
 </body>
 
-</html>									   
+</html>
