@@ -6,29 +6,29 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  /*display: flex;*/
+  display: grid;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  /*background: #343F4F;*/
+  min-height: 120vh;
+  background: #ffffff;
 }
 .wrapper{
-  display: flex;
+  display: grid;
 }
 .wrapper .static-txt{
-  color: #fff;
+  color: #adadad;
   font-size: 60px;
   font-weight: 400;
 }
 .wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
+  margin-left: 0px;
+  height: 100px;
   line-height: 90px;
   overflow: hidden;
 }
 .dynamic-txts li{
   list-style: none;
-  color: #FC6D6D;
+  color: #11ABB0;
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -43,7 +43,7 @@ body{
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
-  line-height: 90px;
+  line-height: 85px;
 }
 .dynamic-txts li span::after{
   content: "";
@@ -51,8 +51,8 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background: #343F4F;
-  border-left: 2px solid #FC6D6D;
+  background: #ffffff;
+  border-left: 2px solid #11ABB0;
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
