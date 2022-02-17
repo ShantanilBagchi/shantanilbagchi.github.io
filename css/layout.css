@@ -40,10 +40,10 @@ img { border-radius: 3px; }
 }
 #page-title h1 {
    font: 50px/60px raleway-bold, sans-serif;
-   color: #fff;
+   color: #6d6060;
    padding: 0;
    margin: 0 0 18px 0;
-   text-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+   /*text-shadow: 0px 1px 5px rgba(0, 0, 0, .3);*/
 }
 #page-title h1 span,
 #page-title a { color: #11ABB0; }
@@ -128,7 +128,7 @@ img { border-radius: 3px; }
 }
 #sidebar .tagcloud a:hover {
     color: #fff;
-    background: #11ABB0;
+    background: #11abb0;
 }
 
 /* Photostream */
@@ -190,14 +190,20 @@ img { border-radius: 3px; }
 header {
    height: 96px;
    width: 100%;
-   background: #383232 url(../images/header-bg.jpg);
+   background: #ffffff url(../images/header-bg.jpg);
+   /*background: #ffffff;*/ 
+   /*background: -webkit-linear-gradient(to right, #9e2cd3 0%, #7F00FF 75%);
+   background: linear-gradient(to right, #b735f3 0%, #f9f2ff 75%);*/
+   box-shadow:0 15px 3px 0 #0000003b;
 }
+
+
 
 /* header logo */
 header .logo {
    position: absolute;
-   left: 20px;
-   top: 48px;
+   left: 10px;
+   top: 40px;
 }
 header .logo a {
    display: block;
@@ -205,8 +211,8 @@ header .logo a {
 	padding: 0;
 	border: none;
 	outline: none;
-   width: 113px;
-   height: 24px;
+   width: 150px;
+   height: auto;
 }
 
 /* primary navigation
@@ -269,7 +275,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li:hover > a,
-ul#nav li.current a { color: #fff; }
+ul#nav li.current a { color: rgb(0, 0, 0); }
 
 /* adds down arrow */
 ul#nav span:after {
@@ -291,9 +297,9 @@ ul#nav ul {
    position: absolute;
    top: 100%;
    left: 0;
-	background: #1f2024;
+	background: #ffffff;
    min-width: 100%;
-
+   
 	border-radius: 0 0 3px 3px;
 
    /* for transition effects */
@@ -530,9 +536,10 @@ ul#nav ul li a {
    overflow: hidden;
    border-radius: 3px;
 
-   -webkit-box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.1);
-   -moz-box-shadow:    0px 1px 1px rgba(50, 50, 50, 0.1);
-   box-shadow:         0px 1px 1px rgba(50, 50, 50, 0.1);
+   -webkit-box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.205);
+   -moz-box-shadow:    1px 3px 10px rgba(50, 50, 50, 0.205);
+   box-shadow:         1px 3px 10px rgba(50, 50, 50, 0.205);
+   /*box-shadow:1px 3px 5px 0 #0000003b;*/
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -596,7 +603,7 @@ ul#nav ul li a {
 .portfolio-item .portfolio-item-meta { padding: 18px 0; }
 .portfolio-item .portfolio-item-meta h5 a {
    font: 14px/18px notosans-bold, sans-serif;
-   color: #11ABB0;
+   color: #688B97;
    margin-left: 7%;
 }
 .portfolio-item .portfolio-item-meta p {
